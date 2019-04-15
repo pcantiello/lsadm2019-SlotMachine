@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SlotMachine</string>
+    <string name="lanci">Lanci</string>
+    <string name="segnaposto">Abcd</string>
+    <string name="punti">Punti</string>
+    <string name="zeri">000</string>
 </resources>
