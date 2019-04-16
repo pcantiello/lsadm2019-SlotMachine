@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.activity_main.*
  */
 class MainActivity : AppCompatActivity() {
 
+    var numeroCorrente = 0      // il numero corrente nelle caselle
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -44,6 +46,7 @@ class MainActivity : AppCompatActivity() {
      */
     fun nuovoLancio(durata: Long, escursione: Int) {
         // Qui devo invocare task asincrono che muoverà le rotelle
+        Rotelle().execute(Triple(durata, escursione, numeroCorrente))
     }
 
 }
